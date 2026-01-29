@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://t4ww2naxe562"]
+
+[ext_resource type="PackedScene" uid="uid://b6cvxgs55itbd" path="res://Scenes/dart.tscn" id="1_ebmjs"]
+
+[node name="Game" type="Node2D" unique_id=1388263708]
+
+[node name="CharacterBody2D" parent="." unique_id=1436611590 instance=ExtResource("1_ebmjs")]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1616699778]

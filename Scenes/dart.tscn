@@ -1,0 +1,27 @@
+[gd_scene format=3 uid="uid://b6cvxgs55itbd"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_sj44s"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_rcx20"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_drbt2"]
+diffuse_texture = SubResource("PlaceholderTexture2D_sj44s")
+specular_texture = SubResource("PlaceholderTexture2D_rcx20")
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_w0w6f"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_exvtn"]
+radius = 43.011627
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=1436611590]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1928893741]
+position = Vector2(1.9073486e-06, -4.2915344e-06)
+scale = Vector2(98.00001, 96)
+texture = SubResource("CanvasTexture_drbt2")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=942360970]
+sprite_frames = SubResource("SpriteFrames_w0w6f")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1202665773]
+shape = SubResource("CircleShape2D_exvtn")
